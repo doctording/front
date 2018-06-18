@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/**/
+.content{
+    width: 500px;
+    margin: 10%;
+}
+.content img{
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 10px;
+}
+/**/
+.content2{
+    width: 500px;
+    margin: 10%;
+}
+.content2 img{
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+.content2 span{
+    display: block;
+    margin-left: 80px;
+}
+/**/
+.content3{
+    width: 500px;
+    margin: 10%;
+}
+.content3 img{
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+.content3 span{
+    display: block;
+    margin-left: 85px;
+    margin-right: 10px;
+    text-align:justify; /*文字两端对其*/
+}
+
+.content4{
+    /*宽度不设置，自适应*/
+    margin: 10%; 
+}
+.content4 img{
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+.content4 span{
+    display: block;
+    margin-left: 80px;
+    text-align:justify; /*文字两端对其*/
+}
