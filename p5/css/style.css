@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+.content{
+    margin: 100px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+/* 1 */
+ul{
+    list-style-type: none;
+}
+
+.nav > li{
+   float: left;
+   background-color: aquamarine;
+   border: 1px solid red;
+}
+h3{
+    clear: both;
+}
+
+/* 2 */
+.nav > li{
+    text-align: center;
+}
+ul a{
+    display:block;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;  
+}
+.drop-down-content{
+   padding: 0;
+   display: none;
+}
+
+/*3*/
+.drop-down:hover .drop-down-content{ 
+    display: block;
+}
+.drop-down-content a:hover{ 
+    background-color: red;
+}
