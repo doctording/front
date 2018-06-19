@@ -20,3 +20,7 @@
 * table-cell	此元素会作为一个表格单元格显示（类似 &lt;td&gt; 和 &lt;th&gt;）
 * table-caption	此元素会作为一个表格标题显示（类似 &lt;caption&gt;）
 * inherit	规定应该从父元素继承 display 属性的值。
+
+# 采用 hover + display（显示，隐藏）
+
+# 采用 hover + postion(relative, absolute)（显示，隐藏）

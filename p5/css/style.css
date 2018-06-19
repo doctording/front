@@ -41,7 +41,7 @@ ul a{
    display: none;
 }
 
-/*3*/
+/* 3 */
 .drop-down:hover .drop-down-content{ 
     display: block;
 }

@@ -45,7 +45,7 @@ ul a{
    left: -999px;
 }
 
-/*3*/
+/* 3 */
 .drop-down:hover .drop-down-content{ 
     left: 0px;
     background-color: aquamarine;
