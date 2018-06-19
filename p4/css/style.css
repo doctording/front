@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link    {color:blue;}
+a:visited {color:blue;}
+a:hover   {color:red;}
+a:active  {color:yellow;}
+
+.subject ul.ua{
+    margin-left: 100px;
+    margin-right: 100px;
+    border:1px solid #ff0000;
+    list-style-type: upper-roman;
+}
+.subject ul.ua li{
+    border:1px solid #0000ff;
+}
+
+.subject ul.ub{
+    margin-left: 100px;
+    margin-right: 100px;
+    border:1px solid #00ff00;
+    list-style-type: none;
+    list-style-position: outside;
+}
+.subject ul.ub li{
+    border:1px solid #f000ff;
+}
+
+.subject ul.uc{
+    margin-left: 100px;
+    margin-right: 100px;
+    border:1px solid #00ff00;
+    list-style-type: none;
+}
+.subject ul.uc li{
+    border:1px solid #f000ff;
+    float: left;
+    padding: 10px;
+}
+.clean{
+    clear: both;
+}
+
+.subject ul.uc li:hover{
+    color: red;
+    cursor: pointer;
+}
