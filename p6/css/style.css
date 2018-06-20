@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+.content{
+    margin: 100px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+table.tb{
+    border: 1px solid #000000;
+    text-align: center;
+    width: 90%;
+}
+table.tb thead{
+    background-color: black;
+    color: wheat;
+}
+table.tb thead{
+    background-color: black;
+    color: wheat;
+}
+
+
+table.tb2{
+    border: 1px solid #000000;
+    width: 90%;
+    table-layout: fixed;
+}
+table.tb2 thead{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+}
+table.tb2 thead{
+    background-color: black;
+    color: wheat;
+}
+table.tb2 tbody{
+    background-color: blueviolet;
+    color: wheat;
+    /*word-wrap: break-word;*/
+    word-break: break-all;
+}
