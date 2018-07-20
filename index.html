@@ -1,17 +1,96 @@
-<!DocType html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <title>方块碰撞反弹</title>
-    <link type="text/css" rel="styleSheet"  href="./css/style.css" />
-    <script type="text/javascript" src="./js/ani.js"></script>
-</head>   
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>失去与拥有的只有时间</title>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-color:#00297a;
+            font-size: 85%;
+            margin: 0;
+        }
+           
+        .content {
+            position: absolute;
+            width: 100%;
+            top: 45%;
+            transform: translate(0, -50%);
+            text-align: center;
+        }
+        #time {
+            font-size: 9vmax;
+            font-weight: 400;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        } 
+        #date {
+            font-size: 3vmax;
+            margin: 1em 0;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+    </style>
+</head>
+
 <body>
-    <div id="box">
-       <div id="ball">abc</div>
+    <div class="content">
+        <div id="time">
+            <b id="hour"></b>&nbsp;:<b id="min"></b>
+        </div>
+        <div id="date">
+            <b id="month"></b>月<b id="day"></b>日&nbsp;<b id="week"></b>
+        </div>
     </div>
-    <div class="operate">
-        <button id="op" onclick="anim(this)">start</button>
-    </div>
+
+    <script>
+        function timer() {
+            var date = new Date();
+            var year = date.getFullYear() // 年
+            var month = date.getMonth() + 1; // 月
+            var day  = date.getDate(); // 日
+            var hour = date.getHours(); // 时
+            var minutes = date.getMinutes(); // 分
+            var seconds = date.getSeconds() //秒
+            var weekArr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            var week = weekArr[date.getDay()];
+            // 给一位数数据前面加 “0”
+            if (month >= 1 && month <= 9) {
+            month = "0" + month;
+            }
+            if (day >= 0 && day <= 9) {
+            day = "0" + day;
+            }
+            if (hour >= 0 && hour <= 9) {
+            hour = "0" + hour;
+            }
+            if (minutes >= 0 && minutes <= 9) {
+            minutes = "0" + minutes;
+            }
+            if (seconds >= 0 && seconds <= 9) {
+            seconds = "0" + seconds;
+            }
+            document.getElementById('hour').innerHTML = hour
+            document.getElementById('min').innerHTML = minutes;
+            document.getElementById('month').innerHTML = month;
+            document.getElementById('day').innerHTML = day;
+            document.getElementById('week').innerHTML = week;
+
+            document.getElementById('time').setAttribute("font-size", "500%")
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
 </body>
+
 </html>
